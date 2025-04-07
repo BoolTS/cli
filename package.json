@@ -2,13 +2,12 @@
     "name": "@bool-ts/cli",
     "module": "./src/index.ts",
     "type": "module",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "CLI for Bool framework",
     "license": "MIT",
     "author": "Tran Duc Tam (Neo)",
     "scripts": {
-        "build": "tsc --emitDeclarationOnly && bun build ./src/index.ts --outdir ./dist --minify",
-        "compile": "bun build ./dist/index.js --compile --outfile ./dist/bool"
+        "build": "tsc --emitDeclarationOnly && bun build ./src/index.ts --outdir ./dist --minify"
     },
     "dependencies": {
         "commander": "^13.1.0",
@@ -20,7 +19,7 @@
         "typescript": "^5.8.3"
     },
     "bin": {
-        "bool": "./dist/bool"
+        "bool": "./dist/index.js"
     },
     "publishConfig": {
         "access": "public"
