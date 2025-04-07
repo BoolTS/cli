@@ -2,7 +2,7 @@
     "name": "@bool-ts/cli",
     "module": "./src/index.ts",
     "type": "module",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "CLI for Bool framework",
     "license": "MIT",
     "author": "Tran Duc Tam (Neo)",

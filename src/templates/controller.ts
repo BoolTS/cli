@@ -5,7 +5,7 @@ export const controller = ({ name }: { name: string }) => {
     const convertedPath = plural(toKebabCase(name));
     const convertedName = plural(toPascalCase(name));
 
-    return `import { Controller, Get, Post, Put, Patch, Delete } from "@bool-ts/core";
+    return `import { Controller, Get, Post, Put, Patch, Delete, Param } from "@bool-ts/core";
 
 @Controller("${convertedPath}")
 export class ${convertedName}Controller {
