@@ -1,5 +1,5 @@
 {
-    "name": "bool_cli",
+    "name": "@bool-ts/cli",
     "module": "./src/index.ts",
     "type": "module",
     "version": "1.0.0",
