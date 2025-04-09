@@ -1,13 +1,42 @@
 {
     "name": "@bool-ts/cli",
+    "version": "1.0.9",
+    "description": "CLI for Bool framework - A powerful tool for scaffolding Bool framework components",
+    "main": "./src/index.ts",
     "module": "./src/index.ts",
     "type": "module",
-    "version": "1.0.3",
-    "description": "CLI for Bool framework",
-    "license": "MIT",
-    "author": "Tran Duc Tam (Neo)",
+    "bin": {
+        "bool": "./dist/bool"
+    },
+    "files": [
+        "dist",
+        "src"
+    ],
     "scripts": {
-        "build": "bun build --compile --minify --sourcemap --bytecode ./src/index.ts --outfile ./dist/bool"
+        "build": "bun build --compile --minify --sourcemap --bytecode ./src/index.ts --outfile ./dist/bool",
+        "dev": "bun --watch ./src/index.ts"
+    },
+    "keywords": [
+        "bool",
+        "cli",
+        "scaffolding",
+        "framework",
+        "typescript",
+        "bun"
+    ],
+    "author": "Tran Duc Tam (Neo) <tam.dev.4693@gmail.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BoolTS/cli.git"
+    },
+    "bugs": {
+        "url": "https://github.com/BoolTS/cli/issues"
+    },
+    "homepage": "https://github.com/BoolTS/cli#readme",
+    "engines": {
+        "node": ">=18.0.0",
+        "bun": ">=1.0.0"
     },
     "dependencies": {
         "commander": "^13.1.0",
@@ -17,9 +46,6 @@
         "@types/bun": "latest",
         "@types/pluralize": "^0.0.33",
         "typescript": "^5.8.3"
-    },
-    "bin": {
-        "bool": "./dist/bool"
     },
     "publishConfig": {
         "access": "public"
